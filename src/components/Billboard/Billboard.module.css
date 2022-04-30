@@ -1,0 +1,86 @@
+.billboard {
+    /* background-color: greenyellow; */
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    width: 100%;
+    height: 56.25vw;
+}
+
+.innerBillboard {
+    position: absolute;
+}
+
+.imgHero {
+    max-width: 1263px;
+    filter: brightness(70%);
+}
+
+.fadeOut {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0) 0,
+        rgba(20, 20, 20, 0.15) 15%,
+        rgba(20, 20, 20, 0.35) 29%,
+        rgba(20, 20, 20, 0.58) 44%,
+        #141414 68%,
+        #141414 100%
+    );
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    width: 100%;
+    height: 14.7vw;
+    top: auto;
+    bottom: -1px;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    left: 4%;
+    width: 36%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 5em;
+}
+
+.description {
+    margin-top: .8rem;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    border-radius: 5px;
+    border: none;
+    padding: .7rem 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.buttons span {
+    margin-left: .5rem;
+}
+
+.buttons button .moreInfo {
+    color: white;
+}
+
+.buttons .infoBtn {
+    background-color: rgba(109, 109, 110, .7);
+}
